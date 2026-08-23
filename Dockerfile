@@ -13,8 +13,8 @@ WORKDIR /var/www/html
 # Copy project files into the container
 COPY . .
 
-# Expose the port Render uses
-EXPOSE 10000
+# Expose Apache HTTP port
+EXPOSE 80
 
 # Start Apache (only one CMD!)
 CMD ["apache2-foreground"]

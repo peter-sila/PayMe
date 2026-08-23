@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'PartyA' => $phoneNumber,
         'PartyB' => $shortcode,
         'PhoneNumber' => $phoneNumber,
-        'CallBackURL' => 'https://pretty-infinitely-zebra.ngrok-free.app/Softwaredevs/payme/callback.php',
+        'CallBackURL' => 'https://d1b69e6dc664.ngrok-free.app/Softwaredevs/payme/callback.php',
         'AccountReference' => 'Test123',
         'TransactionDesc' => 'Payment'
     ];
