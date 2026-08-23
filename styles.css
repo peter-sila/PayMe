@@ -17,6 +17,21 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.container h1,p {
+    text-align: center;
+}
+
+.container h1 {
+    color: rgb(1, 27, 1);
+    margin: 10px auto;
+
+}
+
+.container p {
+    color: rgb(8, 70, 8);
+    margin: 5px auto;
+}
+
 .container form label {
     font-weight: bold;
     display: block;
