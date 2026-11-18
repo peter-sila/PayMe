@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phoneNumber = '254' . substr($phone, -9);
 
     // M-Pesa API credentials
-    $consumerKey = 'CpAt5V328RRp9nUnobwDGV2pUAqZrVASBcADT18RByA8m8lN';
-    $consumerSecret = 'kzrrHfwmhdKDhY8IEpGnEioQTD6gegbgCitiDXl9lBA3MNg1xwbKHBeHifxIs2X5';
+    $consumerKey = getenv('consumerKey');
+    $consumerSecret = getenv('consumerSecret');
 
     // Step 1: Get access token
     $oauth_url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Step 2: Make STK Push request
     $stk_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
     $shortcode = '174379';
-    $passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
+    $passkey = getenv('passkey');
     $timestamp = date('YmdHis');
     $password = base64_encode($shortcode . $passkey . $timestamp);
 

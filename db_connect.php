@@ -1,9 +1,9 @@
 <?php
 // Read DB settings from environment variables with sensible defaults
-$host = getenv('DB_HOST') ?: 'localhost';
-$user = getenv('DB_USER') ?: 'root';
-$password = getenv('DB_PASSWORD') ?: 'Syla';
-$database = getenv('DB_NAME') ?: 'payme';
+$host = getenv('DB_HOST');
+$user = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
+$database = getenv('DB_NAME');
 
 $conn = new mysqli($host, $user, $password, $database);
 
