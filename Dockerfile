@@ -18,3 +18,4 @@ EXPOSE 80
 
 # Start Apache (only one CMD!)
 CMD ["apache2-foreground"]
+
